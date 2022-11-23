@@ -12,7 +12,7 @@ export class NovaTransferenciaComponent {
 
   destino: number;
 
-  transferir(): void {
+  transferir() {
     console.log('Solicitada Nova transferencia');
     const valorEmitir = { valor: this.valor, destino: this.destino };
     this.aoTransferir.emit(valorEmitir);
