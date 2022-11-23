@@ -1,4 +1,14 @@
-<div *ngForm="let transferencia of transferencias">
-  <p>Valor: {{ transferencias?.valor }}</p>
-  <p>Destino: {{ transferencias?.destino }}</p>
-</div>
+<table>
+  <thead>
+    <th>Data</th>
+    <th>Valor</th>
+    <th>Destino</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transferencia of transferencias">
+      <td>{{ transferencia.data | date: "short" }}</td>
+      <td>{{ transferencia.valor }}</td>
+      <td>{{ transferencia.destino }}</td>
+    </tr>
+  </tbody>
+</table>
