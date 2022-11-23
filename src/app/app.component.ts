@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CadastroTransferencia';
+  transferencia: any;
 
-  transferir($event) {
+  cadastrar($event) {
     console.log($event);
+    this.transferencia = $event;
   }
 }
