@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CadastroTransferencia';
-  transferencia: any;
+  transferencias: any[] = [];
 
   cadastrar($event) {
     console.log($event);
-    this.transferencia = $event;
+    this.transferencias.push($event);
   }
 }
