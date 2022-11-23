@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-extrato',
   templateUrl: './extrato.component.html',
 })
-export class ExtratoComponent {}
+export class ExtratoComponent {
+  @Input() transferencia: any;
+}
