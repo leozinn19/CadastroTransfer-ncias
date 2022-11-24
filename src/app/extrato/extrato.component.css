@@ -8,30 +8,34 @@
   text-align: center;
   margin: 0 auto;
   background-color: white;
+  box-shadow: 0 0 8px rgba(11, 235, 123, 0.1);
+}
+.tabela__linha {
+  margin-bottom: 10px;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: white;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-
-  &:cabecalho {
-    color: var(--primary);
-
-    &__conteudo {
-      padding: 10px;
-      border-bottom: 2px solid green;
-    }
-  }
-
-  &__linha {
-    margin-bottom: 10px;
-    border-radius: 4px;
-
-    &:last-child {
-      .tabela__conteudo {
-        border-bottom: none;
-      }
-    }
-  }
-
-  &__conteudo {
-    padding: 10px;
-    border-bottom: 1px solid var(--cinza-claro);
-  }
+}
+.tabela__conteudo {
+  border-bottom: none;
+  text-align: center;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+.tabela__cabecalho__conteudo {
+  text-align: center;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-bottom: 2px solid rgba(3, 190, 28, 0.61);
+}
+.tabela__cabecalho {
+  text-align: center;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
