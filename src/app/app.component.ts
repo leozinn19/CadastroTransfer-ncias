@@ -10,8 +10,4 @@ export class AppComponent {
   title = 'CadastroTransferencia';
 
   constructor(private service: TransferenciaService) {}
-
-  cadastrar($event) {
-    this.service.adicionar($event);
-  }
 }
