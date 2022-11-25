@@ -7,12 +7,13 @@ import localePt from '@angular/common/locales/pt';
 import { ExtratoComponent } from './extrato/extrato.component';
 import { NovaTransferenciaComponent } from './nova-transferencia/nova-transferencia.component';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
 
 registerLocaleData(localePt, 'pt');
 
 @NgModule({
   declarations: [AppComponent, NovaTransferenciaComponent, ExtratoComponent],
-  imports: [BrowserModule, CommonModule, FormsModule],
+  imports: [BrowserModule, CommonModule, FormsModule, HttpClientModule],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt' },
     { provide: DEFAULT_CURRENCY_CODE, useValue: 'BRL' },

@@ -1,4 +1,4 @@
-import { TransferenciaService } from './../nova-transferencia/services/transferencia.service';
+import { TransferenciaService } from './../services/transferencia.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
