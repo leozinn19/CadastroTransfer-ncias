@@ -19,11 +19,17 @@
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 .tabela__conteudo {
+  padding-left: 8px;
+  padding-right: 8px;
   border-bottom: none;
   text-align: center;
   margin: 0 auto;
   background-color: white;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .tabela__cabecalho__conteudo {
   text-align: center;
@@ -31,11 +37,18 @@
   background-color: white;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
-  border-bottom: 2px solid rgba(3, 190, 28, 0.61);
+  border-bottom: 4px solid rgba(3, 190, 28, 0.61);
+  border-top: 1px solid rgba(3, 190, 28, 0.61);
+  border-left: 1px solid rgba(3, 190, 28, 0.61);
+  border-right: 1px solid rgba(3, 190, 28, 0.61);
 }
 .tabela__cabecalho {
   text-align: center;
   margin: 0 auto;
   background-color: white;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+.nenhuma {
+  padding-left: 150px;
+  padding-top: 50px;
 }
